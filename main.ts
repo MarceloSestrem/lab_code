@@ -285,7 +285,7 @@ namespace lab_code {
      * Get flame sensor state [0-1]
     */
     //% blockId=hackbitFlameRead
-    //% block=Ssensor de Chama  |%pin| detectado flame"
+    //% block=Ssnsor de Chama  |%pin| detectado"
     //% pin.fieldEditor="gridpicker"
     //% pin.fieldOptions.columns=3
     //% group="Digital" 

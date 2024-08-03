@@ -261,7 +261,7 @@ namespace lab_code {
      * Get hall sensor state [0-1]
     */
     //% blockId=hackbitHallRead
-    //% block="hall sensor pin |%pin| activated"
+    //% block="sensor hall |%pin| ativado"
     //% pin.fieldEditor="gridpicker"
     //% pin.fieldOptions.columns=3
     //% group="Digital" 

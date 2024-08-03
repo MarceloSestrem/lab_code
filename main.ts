@@ -324,7 +324,7 @@ namespace lab_code {
     //% block="Sensor de movimento PIR|%pin| movimento detectado"
     //% pin.fieldEditor="gridpicker"
     //% pin.fieldOptions.columns=3
-    //% group="Analog" 
+    //% group="Analógico"
     export function PIRState(pin: AnalogPin): boolean {
         if (pins.analogReadPin(pin) < 600) {
             return false
@@ -378,7 +378,7 @@ namespace lab_code {
     //% raindroppin.fieldOptions.columns=3
     //% vmin.defl=0
     //% vmax.defl=700
-    //% group="Analog" 
+    //% group="Analógico"
     export function ReadRaindrop(raindroppin: AnalogPin, vmin: number, vmax: number): number {
         let voltage = 0;
         let raindrop = 0;
@@ -403,7 +403,7 @@ namespace lab_code {
     //% capacitivesoilhumiditypin.fieldOptions.columns=3
     //% vmin.defl=390
     //% vmax.defl=615
-    //% group="Analog" 
+    //% group="Analógico"
     export function ReadCapacitiveSoilHumidity(capacitivesoilhumiditypin: AnalogPin, vmin: number, vmax: number): number {
         let voltage = 0;
         let soilmoisture = 0;
@@ -425,7 +425,7 @@ namespace lab_code {
     //% blockId="hackbitSoilMoistureRead" block="valor da umidade do solo (0~100) %soilhumiditypin"
     //% soilhumiditypin.fieldEditor="gridpicker"
     //% soilhumiditypin.fieldOptions.columns=3
-    //% group="Analog" 
+    //% group="Analógico"
     export function ReadSoilHumidity(soilmoisturepin: AnalogPin): number {
         let voltage = 0;
         let soilmoisture = 0;
@@ -447,7 +447,7 @@ namespace lab_code {
     //% blockId="hackbitLightIntensityRead" block="valor da intensidade da luz(0~100) %lightintensitypin"
     //% lightintensitypin.fieldEditor="gridpicker"
     //% lightintensitypin.fieldOptions.columns=3
-    //% group="Analog" 
+    //% group="Analógico"
     export function ReadLightIntensity(lightintensitypin: AnalogPin): number {
         let voltage2 = 0;
         let lightintensity = 0;
@@ -469,7 +469,7 @@ namespace lab_code {
     //% blockId="hackbitUVLevelRead" block="Sensor UV (0~15)  %uvlevelpin"
     //% uvlevelpin.fieldEditor="gridpicker"
     //% uvlevelpin.fieldOptions.columns=3
-    //% group="Analog" 
+    //% group="Analógico"
     export function UVLevel(uvlevelpin: AnalogPin): number {
         let UVlevel = pins.analogReadPin(uvlevelpin);
         if (UVlevel > 625) {
@@ -492,7 +492,7 @@ namespace lab_code {
     //% blockId="hackbitTemperatureRead" block="Sensor de temperatura (Celsius)  %temperaturepin"
     //% temperaturepin.fieldEditor="gridpicker"
     //% temperaturepin.fieldOptions.columns=3
-    //% group="Analog" 
+    //% group="Analógico"
     export function ReadTemperature(temperaturepin: AnalogPin): number {
         let A               // value 
         let B = 4275        // B value of the thermistor
@@ -512,7 +512,7 @@ namespace lab_code {
     //% blockId="hackbitGasRead" block="%Sensorde gás %gaspin concentração valor"
     //% gaspin.fieldEditor="gridpicker" gaspin.fieldOptions.columns=3
     //% sensor.fieldEditor="gridpicker" sensor.fieldOptions.columns=2    
-    //% group="Analog" 
+    //% group="Analógico"
     export function hackbitGasRead(sensor: GasList, gaspin: AnalogPin): number {
         if (sensor == GasList.Co2) {
             return 1024 - pins.analogReadPin(gaspin)
@@ -527,7 +527,7 @@ namespace lab_code {
     //% blockId="hackbitNoiseRead" block="Sensor de Ruido(dB) %noisepin (0~100)"
     //% noisepin.fieldEditor="gridpicker"
     //% noisepin.fieldOptions.columns=3
-    //% group="Analog" 
+    //% group="Analógico"
     export function ReadNoise(noisepin: AnalogPin): number {
         let level = 0
         let voltage3 = 0

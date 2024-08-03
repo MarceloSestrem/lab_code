@@ -342,7 +342,7 @@ namespace lab_code {
     //% blockId="hackbitInitAirSensor" block="Inicializar sensor de qualidade do ar em pino %airlevelpin"
     //% airlevelpin.fieldEditor="gridpicker"
     //% airlevelpin.fieldOptions.columns=3
-    //% group="Analog" 
+    //% group="Analógico" 
     export function begin(airlevelpin: AnalogPin) {
         initairlevel = pins.analogReadPin(airlevelpin)
     }
@@ -355,7 +355,7 @@ namespace lab_code {
     //% airlevelpin.fieldEditor="gridpicker"
     //% airlevelpin.fieldOptions.columns=3
     //% serialOutput.defl=false
-    //% group="Analog" 
+    //% group="Analógico"
     export function AirLevel(airlevelpin: AnalogPin, serialOutput: boolean): number {
         if (serialOutput) {
             serial.writeLine("Init value quality air level " + initairlevel)

@@ -199,7 +199,7 @@ namespace lab_code {
      * Get line finder sensor state [0-1]
     */
     //% blockId=hackbitLineFinderRead
-    //% block="pin |%pin|Sensor de linha Preta ou branca |$reverseAction|"
+    //% block="pin |%pin|Sensor de linha Preta |$reverseAction|"
     //% pin.fieldEditor="gridpicker"
     //% pin.fieldOptions.columns=3
     //% group="Digital" 
@@ -273,7 +273,7 @@ namespace lab_code {
      * Get crash button state [0-1]
     */
     //% blockId=hackbitCrashRead
-    //% block="crash sensor |%pin| is pressed"
+    //% block="Sensor de colisão |%pin| pressionado"
     //% pin.fieldEditor="gridpicker"
     //% pin.fieldOptions.columns=3
     //% group="Digital" 
@@ -285,7 +285,7 @@ namespace lab_code {
      * Get flame sensor state [0-1]
     */
     //% blockId=hackbitFlameRead
-    //% block="flame sensor pin |%pin| detects flame"
+    //% block=Ssensor de Chama  |%pin| detectado flame"
     //% pin.fieldEditor="gridpicker"
     //% pin.fieldOptions.columns=3
     //% group="Digital" 
@@ -297,7 +297,7 @@ namespace lab_code {
      * Get touch sensor state [0-1]
     */
     //% blockId=hackbitTouchRead
-    //% block="touch sensor pin |%pin| touched"
+    //% block="Sensor de toque |%pin|"
     //% pin.fieldEditor="gridpicker"
     //% pin.fieldOptions.columns=3
     //% group="Digital" 
@@ -309,7 +309,7 @@ namespace lab_code {
      * Get vibration state [0-1] SW-420
     */
     //% blockId=hackbitVibrationRead
-    //% block="vibration sensor pin |%pin| detects vibration"
+    //% block="Sensor de vibração |%pin| detectando vibração"
     //% pin.fieldEditor="gridpicker"
     //% pin.fieldOptions.columns=3
     //% group="Digital" 
@@ -321,7 +321,7 @@ namespace lab_code {
      * Get PIR sensor state [0-1]
     */
     //% blockId=hackbitPIRRead
-    //% block="PIR sensor pin |%pin| detects motion"
+    //% block="Sensor de movimento PIR|%pin| movimento detectado"
     //% pin.fieldEditor="gridpicker"
     //% pin.fieldOptions.columns=3
     //% group="Analog" 
@@ -339,8 +339,7 @@ namespace lab_code {
     * Initialize Grove Air Quality Sensor (v1.3)
     * @param airlevelpin describe parameter here, eg: AnalogPin.P1
     */
-    //% blockId="hackbitInitAirSensor" block="Initialize Air quality sensor at pin %airlevelpin"
-    //% block.loc.pt-BR="Inicializar sensor de qualidade do ar em pino %airlevelpin"
+    //% blockId="hackbitInitAirSensor" block="Inicializar sensor de qualidade do ar em pino %airlevelpin"
     //% airlevelpin.fieldEditor="gridpicker"
     //% airlevelpin.fieldOptions.columns=3
     //% group="Analog" 
@@ -352,8 +351,7 @@ namespace lab_code {
     * Get Grove Air Quality Sensor (v1.3) level value (0~1023)
     * @param airlevelpin describe parameter here, eg: AnalogPin.P1
     */
-    //% blockId="hackbitAirLevelRead" block="Air quality sensor (0~1023) at pin %airlevelpin |Serial output $serialOutput"
-    //% block.loc.pt-BR="Sensor de qualidade do ar (0~1023) no pino %airlevelpin |Saída serial $serialOutput"
+    //% blockId="hackbitAirLevelRead" block="Sensor de qualidade do ar (0~1023) no pino %airlevelpin |Saída serial $serialOutput"
     //% airlevelpin.fieldEditor="gridpicker"
     //% airlevelpin.fieldOptions.columns=3
     //% serialOutput.defl=false
@@ -375,7 +373,7 @@ namespace lab_code {
     * Get raindrop (0~100%)
     * @param raindroppin describe parameter (range: 0-700) here, eg: AnalogPin.P1
     */
-    //% blockId="hackbitRaindropRead" block="value of raindrop sensor (0~100) at pin %raindroppin. Range (sensor read) min|%vmin| max|%vmax|""
+    //% blockId="hackbitRaindropRead" block="valor do sensor de gota de chuva(0~100)  %raindroppin. Alcance (leitura do sensor) min|%vmin| max|%vmax|""
     //% raindroppin.fieldEditor="gridpicker"
     //% raindroppin.fieldOptions.columns=3
     //% vmin.defl=0
@@ -400,7 +398,7 @@ namespace lab_code {
     * Get soil moisture(0~100%) [capacitive]
     * @param capacitive soil moisture (range: 390~615) pin describe parameter here, eg: AnalogPin.P1
     */
-    //% blockId="hackbitCapacitiveSoilMoistureRead" block="value of soil moisture(0~100) at pin %capacitivesoilhumiditypin. Range (sensor read) min|%vmin| max|%vmax|"
+    //% blockId="hackbitCapacitiveSoilMoistureRead" block="valor da umidade do solo(0~100)  %capacitivesoilhumiditypin. Alcance (leitura do sensor) min|%vmin| max|%vmax|"
     //% capacitivesoilhumiditypin.fieldEditor="gridpicker"
     //% capacitivesoilhumiditypin.fieldOptions.columns=3
     //% vmin.defl=390
@@ -424,7 +422,7 @@ namespace lab_code {
     * Get soil moisture(0~100%)
     * @param soilmoisturepin describe parameter here, eg: AnalogPin.P1
     */
-    //% blockId="hackbitSoilMoistureRead" block="value of soil moisture(0~100) at pin %soilhumiditypin"
+    //% blockId="hackbitSoilMoistureRead" block="valor da umidade do solo (0~100) %soilhumiditypin"
     //% soilhumiditypin.fieldEditor="gridpicker"
     //% soilhumiditypin.fieldOptions.columns=3
     //% group="Analog" 
@@ -446,7 +444,7 @@ namespace lab_code {
     * Get light intensity(0~100%)
     * @param lightintensitypin describe parameter here, eg: AnalogPin.P1
     */
-    //% blockId="hackbitLightIntensityRead" block="value of light intensity(0~100) at pin %lightintensitypin"
+    //% blockId="hackbitLightIntensityRead" block="valor da intensidade da luz(0~100) %lightintensitypin"
     //% lightintensitypin.fieldEditor="gridpicker"
     //% lightintensitypin.fieldOptions.columns=3
     //% group="Analog" 
@@ -468,7 +466,7 @@ namespace lab_code {
     * Get UV level value (0~15)
     * @param uvlevelpin describe parameter here, eg: AnalogPin.P1
     */
-    //% blockId="hackbitUVLevelRead" block="UV sensor (0~15) at pin %uvlevelpin"
+    //% blockId="hackbitUVLevelRead" block="Sensor UV (0~15)  %uvlevelpin"
     //% uvlevelpin.fieldEditor="gridpicker"
     //% uvlevelpin.fieldOptions.columns=3
     //% group="Analog" 
@@ -491,7 +489,7 @@ namespace lab_code {
     * Get temperature value Celsius
     * @param temperaturepin describe parameter here, eg: AnalogPin.P1
     */
-    //% blockId="hackbitTemperatureRead" block="value of temperature (Celsius) at pin %temperaturepin"
+    //% blockId="hackbitTemperatureRead" block="Sensor de temperatura (Celsius)  %temperaturepin"
     //% temperaturepin.fieldEditor="gridpicker"
     //% temperaturepin.fieldOptions.columns=3
     //% group="Analog" 
@@ -511,7 +509,7 @@ namespace lab_code {
     /** 
     * Get Gas Sensor concentration value 
     */
-    //% blockId="hackbitGasRead" block="%sensor gas sensor at pin %gaspin concentration value"
+    //% blockId="hackbitGasRead" block="%Sensorde gás %gaspin concentração valor"
     //% gaspin.fieldEditor="gridpicker" gaspin.fieldOptions.columns=3
     //% sensor.fieldEditor="gridpicker" sensor.fieldOptions.columns=2    
     //% group="Analog" 
@@ -526,7 +524,7 @@ namespace lab_code {
     * Get noise(dB)
     * @param noisepin describe parameter here, eg: AnalogPin.P1, (Loudness Sensor)
     */
-    //% blockId="hackbitNoiseRead" block="value of noise(dB) at pin %noisepin (0~100)"
+    //% blockId="hackbitNoiseRead" block="Sensor de Ruido(dB) %noisepin (0~100)"
     //% noisepin.fieldEditor="gridpicker"
     //% noisepin.fieldOptions.columns=3
     //% group="Analog" 
@@ -647,7 +645,7 @@ namespace lab_code {
     * @param selected color
     */
     //% blockId="grovecolorsensorgetcolor" 
-    //% block="color sensor detected %Color"
+    //% block="Sensor de Cor %Color"
     //% Color.fieldEditor="gridpicker"
     //% Color.fieldOptions.columns=2
     //% group="IIC"  

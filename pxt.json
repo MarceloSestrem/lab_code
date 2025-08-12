@@ -10,7 +10,8 @@
     "files": [
         "main.ts",
         "README.md",
-        "_locales/pt-BR/README.md"
+        "_locales/pt-BR/README.md",
+        "tutorial-info-cache.json"
     ],
     "testFiles": [
         "test.ts"
